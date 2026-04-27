@@ -1,0 +1,123 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #d9534f;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Recipe Details */
+section:nth-of-type(1) p {
+    margin: 0.5rem 0;
+}
+
+/* Image Section */
+section:nth-of-type(2) {
+    text-align: center;
+}
+
+section:nth-of-type(2) img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Ingredients */
+section:nth-of-type(3) ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+section:nth-of-type(3) li {
+    margin: 0.5rem 0;
+}
+
+/* Instructions */
+section:nth-of-type(4) ol {
+    padding-left: 1.5rem;
+}
+
+section:nth-of-type(4) li {
+    margin: 0.5rem 0;
+}
+
+/* Tips */
+section:nth-of-type(5) p {
+    font-weight: 500;
+}
+
+/* Bonus */
+section:nth-of-type(6) a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+section:nth-of-type(6) a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+}
